@@ -38,7 +38,7 @@ const Center = () => {
   return (
     <div className="flex-grow text-white h-screen overflow-y-scroll scrollbar-hide">
       <header className="absolute top-5 right-8 text-white">
-        <div onClick={() => signOut({callbackUrl: "/login"})} className="flex items-center bg-black opacity-90 hover:opacity-80 space-x-3 cursor-pointer rounded-full p-1 pr-2">
+        <div onClick={() => signOut()} className="flex items-center bg-black opacity-90 hover:opacity-80 space-x-3 cursor-pointer rounded-full p-1 pr-2">
           {session && (
             <img
               className="h-10 w-10 rounded-full"
